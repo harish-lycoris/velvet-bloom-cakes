@@ -4,7 +4,7 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import { useCart } from "@/store/cart";
 
 export const Route = createFileRoute("/cart")({
-  head: () => ({ meta: [{ title: "Cart · Maison Velour" }] }),
+  head: () => ({ meta: [{ title: "Cart · Coco Sage" }] }),
   component: CartPage,
 });
 

@@ -9,9 +9,9 @@ import celebration from "@/assets/celebration-banner.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Maison Velour — Handcrafted Luxury Cakes" },
+      { title: "Coco Sage — Handcrafted Luxury Cakes" },
       { name: "description", content: "Heirloom cakes handcrafted by Parisian pastry chefs. Single-origin chocolate, seasonal fruit, and patisserie technique." },
-      { property: "og:title", content: "Maison Velour — Handcrafted Luxury Cakes" },
+      { property: "og:title", content: "Coco Sage — Handcrafted Luxury Cakes" },
       { property: "og:description", content: "Heirloom cakes handcrafted by Parisian pastry chefs." },
     ],
   }),
@@ -220,7 +220,7 @@ function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <div className="mb-12 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
             <div>
-              <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-cocoa">@maisonvelour</span>
+              <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-cocoa">@cocosage</span>
               <h2 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">
                 From our <em className="italic">atelier</em>
               </h2>

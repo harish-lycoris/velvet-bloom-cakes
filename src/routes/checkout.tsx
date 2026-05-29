@@ -6,7 +6,7 @@ import { useCart } from "@/store/cart";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/checkout")({
-  head: () => ({ meta: [{ title: "Checkout · Maison Velour" }] }),
+  head: () => ({ meta: [{ title: "Checkout · Coco Sage" }] }),
   component: Checkout,
 });
 

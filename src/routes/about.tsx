@@ -5,10 +5,10 @@ import celebration from "@/assets/celebration-banner.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About · Maison Velour" },
-      { name: "description", content: "The atelier, the philosophy, and the hands behind Maison Velour." },
-      { property: "og:title", content: "About · Maison Velour" },
-      { property: "og:description", content: "The atelier, the philosophy, and the hands behind Maison Velour." },
+      { title: "About · Coco Sage" },
+      { name: "description", content: "The atelier, the philosophy, and the hands behind Coco Sage." },
+      { property: "og:title", content: "About · Coco Sage" },
+      { property: "og:description", content: "The atelier, the philosophy, and the hands behind Coco Sage." },
     ],
   }),
   component: About,
@@ -24,7 +24,7 @@ function About() {
             Patisserie, the <em className="italic">slow way.</em>
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            Maison Velour began in 2014 in a small atelier off Rue Saint-Honoré. A pastry chef,
+            Coco Sage began in 2014 in a small atelier off Rue Saint-Honoré. A pastry chef,
             a chocolatier, and an obsession with one question — what does a perfect cake feel like?
           </p>
         </div>

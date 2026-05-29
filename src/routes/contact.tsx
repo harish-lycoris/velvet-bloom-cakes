@@ -6,9 +6,9 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact · Maison Velour" },
+      { title: "Contact · Coco Sage" },
       { name: "description", content: "Get in touch with our Paris atelier for orders, commissions and enquiries." },
-      { property: "og:title", content: "Contact · Maison Velour" },
+      { property: "og:title", content: "Contact · Coco Sage" },
       { property: "og:description", content: "Get in touch with our Paris atelier." },
     ],
   }),
@@ -36,7 +36,7 @@ function Contact() {
           {[
             { i: MapPin, t: "Atelier", v: "14 Rue Saint-Honoré, 75001 Paris" },
             { i: Phone, t: "Phone", v: "+33 1 42 60 18 04" },
-            { i: Mail, t: "Email", v: "hello@maisonvelour.com" },
+            { i: Mail, t: "Email", v: "hello@cocosage.com" },
             { i: Clock, t: "Hours", v: "Tue – Sat, 10am – 7pm" },
           ].map(({ i: Icon, t, v }) => (
             <div key={t} className="flex items-start gap-5 border-b border-border pb-6">

@@ -12,9 +12,9 @@ export const Route = createFileRoute("/shop/$id")({
     const cake = cakes.find((c) => c.id === params.id);
     return {
       meta: [
-        { title: cake ? `${cake.name} · Maison Velour` : "Cake · Maison Velour" },
+        { title: cake ? `${cake.name} · Coco Sage` : "Cake · Coco Sage" },
         { name: "description", content: cake?.description ?? "Handcrafted luxury cake" },
-        { property: "og:title", content: cake?.name ?? "Maison Velour" },
+        { property: "og:title", content: cake?.name ?? "Coco Sage" },
         { property: "og:description", content: cake?.description ?? "" },
         ...(cake ? [{ property: "og:image", content: cake.image }] : []),
       ],

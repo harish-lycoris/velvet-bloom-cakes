@@ -37,7 +37,7 @@ export function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         <Link to="/" className="flex items-center gap-2">
           <span className={`font-display text-2xl tracking-wide ${solid ? "text-foreground" : "text-foreground"}`}>
-            Maison <span className="italic text-cocoa">Velour</span>
+            Coco <span className="italic text-cocoa">Sage</span>
           </span>
         </Link>
 

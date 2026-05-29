@@ -104,7 +104,7 @@ export const testimonials = [
     name: "Marcus Bell",
     role: "London, UK",
     quote:
-      "I've ordered from the world's best patisseries. Maison Velour sits comfortably among them. Honest, exquisite craft.",
+      "I've ordered from the world's best patisseries. Coco Sage sits comfortably among them. Honest, exquisite craft.",
   },
   {
     name: "Priya Shah",
