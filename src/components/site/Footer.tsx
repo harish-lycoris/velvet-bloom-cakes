@@ -40,16 +40,16 @@ export function Footer() {
           <div>
             <h4 className="text-xs font-medium uppercase tracking-[0.22em] text-foreground">Visit us</h4>
             <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
-              <li>14 Rue Saint-Honoré</li>
-              <li>75001 Paris</li>
-              <li>hello@CocoSage.com</li>
+              <li>Rajahmundry</li>
+              <li>Andhrapradesh India</li>
+              <li>hello@cocosage.com</li>
               <li>+33 1 42 60 18 04</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-xs text-muted-foreground md:flex-row">
-          <p>© {new Date().getFullYear()} Coco Sage. Crafted in Paris.</p>
+          <p>© {new Date().getFullYear()} Coco Sage. Andhrapradesh India.</p>
           <p className="tracking-[0.18em] uppercase">Privacy · Terms · Shipping</p>
         </div>
       </div>

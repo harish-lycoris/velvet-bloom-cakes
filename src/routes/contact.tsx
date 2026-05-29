@@ -34,8 +34,8 @@ function Contact() {
       <section className="mx-auto grid max-w-7xl gap-16 px-6 py-20 lg:grid-cols-2 lg:px-10">
         <div className="space-y-8">
           {[
-            { i: MapPin, t: "Atelier", v: "14 Rue Saint-Honoré, 75001 Paris" },
-            { i: Phone, t: "Phone", v: "+33 1 42 60 18 04" },
+            { i: MapPin, t: "Atelier", v: "Rajahmundry, Andhrapradesh India" },
+            { i: Phone, t: "Phone", v: "+91 98765 43210" },
             { i: Mail, t: "Email", v: "hello@cocosage.com" },
             { i: Clock, t: "Hours", v: "Tue – Sat, 10am – 7pm" },
           ].map(({ i: Icon, t, v }) => (
