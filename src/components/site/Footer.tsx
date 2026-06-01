@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Facebook, Twitter, Mail } from "lucide-react";
+import logo from "@/assets/coco-sage-logo.png";
 
 export function Footer() {
   return (
@@ -7,9 +8,10 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
-            <h3 className="font-display text-3xl">
+            <span className="font-display text-3xl flex items-center gap-2">
+              <img src={logo} alt="Coco Sage Logo" className="h-12 w-12 md:h-16 md:w-16 object-contain" />
               Coco <span className="italic">Sage</span>
-            </h3>
+            </span>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
               A small atelier of pastry chefs handcrafting heirloom cakes with
               old-world technique and the finest single-origin ingredients.
@@ -53,6 +55,6 @@ export function Footer() {
           <p className="tracking-[0.18em] uppercase">Privacy · Terms · Shipping</p>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 }

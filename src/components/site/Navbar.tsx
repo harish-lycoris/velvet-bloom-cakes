@@ -2,6 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ShoppingBag, Menu, X } from "lucide-react";
 import { useCart } from "@/store/cart";
+import logo from "@/assets/coco-sage-logo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -28,14 +29,14 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        solid
-          ? "bg-background/85 backdrop-blur-md border-b border-border/60"
-          : "bg-transparent"
-      }`}
+      className={`sticky inset-x-0 top-0 z-50 transition-all duration-500 ${solid
+        ? "bg-background/85 backdrop-blur-md border-b border-border/60"
+        : "bg-transparent/85"
+        }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-10">
         <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="Coco Sage Logo" className="h-12 w-12 md:h-16 md:w-16 object-contain"/>
           <span className={`font-display text-2xl tracking-wide ${solid ? "text-foreground" : "text-foreground"}`}>
             Coco <span className="italic text-cocoa">Sage</span>
           </span>
@@ -46,7 +47,7 @@ export function Navbar() {
             <Link
               key={l.to}
               to={l.to}
-              className="group relative text-sm uppercase tracking-[0.18em] text-foreground/80 transition hover:text-foreground"
+              className="group relative text-sm uppercase tracking-[0.18em] text-foreground/80 transition hover:text-foreground font-bold"
               activeProps={{ className: "text-foreground" }}
             >
               {l.label}

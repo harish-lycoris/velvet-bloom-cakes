@@ -75,7 +75,7 @@ function ProductPage() {
                 </span>
               )}
               <h1 className="mt-5 font-display text-5xl leading-tight sm:text-6xl">{cake.name}</h1>
-              <p className="mt-4 font-display text-2xl text-cocoa">${cake.price}.00</p>
+              <p className="mt-4 font-display text-2xl text-cocoa">₹{cake.price}.00</p>
               <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
                 {cake.longDescription}
               </p>
@@ -103,7 +103,7 @@ function ProductPage() {
                   }}
                   className="flex-1 rounded-full bg-cocoa py-4 text-sm uppercase tracking-[0.18em] text-primary-foreground transition hover:opacity-90"
                 >
-                  Add to cart — ${cake.price * qty}
+                  Add to cart — ₹{cake.price * qty}
                 </button>
               </div>
 

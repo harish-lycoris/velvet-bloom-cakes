@@ -52,7 +52,7 @@ export function ProductCard({ cake }: { cake: Cake }) {
             {cake.description}
           </p>
         </div>
-        <span className="shrink-0 font-display text-lg">${cake.price}</span>
+        <span className="shrink-0 font-display text-lg">₹{cake.price}</span>
       </div>
     </article>
   );
