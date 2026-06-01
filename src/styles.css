@@ -49,29 +49,38 @@
   --radius: 0.75rem;
 
   /* Luxury cake palette */
-  --background: oklch(0.985 0.008 80);        /* warm off-white */
-  --foreground: oklch(0.25 0.04 40);           /* dark cocoa text */
+  --background: oklch(0.985 0.008 80);
+  /* warm off-white */
+  --foreground: oklch(0.25 0.04 40);
+  /* dark cocoa text */
 
-  --cream: oklch(0.96 0.018 80);               /* soft cream */
-  --blush: oklch(0.88 0.045 20);               /* pastel pink */
-  --cocoa: oklch(0.32 0.06 40);                /* chocolate brown */
-  --gold: oklch(0.78 0.12 80);                 /* soft gold */
+  --cream: oklch(0.96 0.018 80);
+  /* soft cream */
+  --blush: oklch(0.88 0.045 20);
+  /* pastel pink */
+  --cocoa: oklch(0.32 0.06 40);
+  /* chocolate brown */
+  --gold: oklch(0.78 0.12 80);
+  /* soft gold */
 
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.25 0.04 40);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.25 0.04 40);
 
-  --primary: oklch(0.32 0.06 40);              /* cocoa */
+  --primary: oklch(0.32 0.06 40);
+  /* cocoa */
   --primary-foreground: oklch(0.98 0.01 80);
 
-  --secondary: oklch(0.94 0.025 30);           /* light blush */
+  --secondary: oklch(0.94 0.025 30);
+  /* light blush */
   --secondary-foreground: oklch(0.32 0.06 40);
 
   --muted: oklch(0.95 0.012 80);
   --muted-foreground: oklch(0.48 0.04 40);
 
-  --accent: oklch(0.88 0.045 20);              /* blush */
+  --accent: oklch(0.88 0.045 20);
+  /* blush */
   --accent-foreground: oklch(0.32 0.06 40);
 
   --destructive: oklch(0.55 0.2 25);
@@ -123,9 +132,11 @@
   * {
     border-color: var(--color-border);
   }
+
   html {
     scroll-behavior: smooth;
   }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
@@ -133,7 +144,12 @@
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
   }
-  h1, h2, h3, h4, h5 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-family: var(--font-display);
     font-weight: 400;
     letter-spacing: -0.01em;
@@ -141,28 +157,55 @@
 }
 
 @layer utilities {
-  .font-display { font-family: var(--font-display); }
-  .text-balance { text-wrap: balance; }
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
 
   .fade-up {
     animation: fade-up 0.8s ease-out both;
   }
+
   @keyframes fade-up {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
+
   .ken-burns {
     animation: ken-burns 14s ease-out both;
   }
+
   @keyframes ken-burns {
-    from { transform: scale(1.05); }
-    to { transform: scale(1.12); }
+    from {
+      transform: scale(1.05);
+    }
+
+    to {
+      transform: scale(1.12);
+    }
   }
+
   .marquee {
     animation: marquee 30s linear infinite;
   }
+
   @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
   }
 }
