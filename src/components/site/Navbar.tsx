@@ -84,7 +84,7 @@ export function Navbar() {
                 key={l.to}
                 to={l.to}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-3 text-sm uppercase tracking-[0.18em] text-background/80 hover:bg-secondary"
+                className="rounded-lg px-3 py-3 text-sm uppercase tracking-[0.18em] text-black md:text-background/80 hover:bg-secondary"
               >
                 {l.label}
               </Link>

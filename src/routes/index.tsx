@@ -9,6 +9,9 @@ import { HeroSlider } from "@/components/site/HeroSlider";
 import { FeaturedGrids } from "@/components/site/FeaturedGrids";
 import { ProductGrids } from "@/components/site/ProductGrids";
 
+const testimonialBg =
+  "https://bizdomfs.blob.core.windows.net/post-image/bee0b115-81a1-4f4f-8264-47d43c1224aa.png";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -31,7 +34,7 @@ function Home() {
       <HeroSlider />
 
       {/* MARQUEE */}
-      <section className="overflow-hidden border-y border-border/60 bg-cream py-6">
+      {/*  <section className="overflow-hidden border-y border-border/60 bg-cream py-6">
         <div className="marquee flex w-max gap-16 whitespace-nowrap font-display text-2xl text-cocoa/60">
           {Array.from({ length: 2 }).map((_, i) => (
             <div key={i} className="flex gap-16">
@@ -46,20 +49,41 @@ function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* FEATURED */}
       <FeaturedGrids />
 
-      {/* CATEGORIES */}
-      <ProductGrids />
+      {/* <ProductGrids /> */}
+      {/* CELEBRATION BANNERS */}
+      <section className="bg-cream py-16">
+        <div className="mx-auto max-w-[1800px] px-6 lg:px-10">
+          <div className="grid gap-6 lg:grid-cols-2">
+            <div className="overflow-hidden shadow-lg">
+              <img
+                src="https://bizdomfs.blob.core.windows.net/post-image/7f4e05c1-7310-4f1b-9e7f-ab72ec40f2e8.png"
+                alt="Anniversary Cakes"
+                className="h-full w-full object-cover transition duration-500 hover:scale-105"
+              />
+            </div>
+
+            <div className="overflow-hidden shadow-lg">
+              <img
+                src="https://bizdomfs.blob.core.windows.net/post-image/e4a471f2-08de-40f0-9fbf-5e7243f3d126.png"
+                alt="Birthday Cakes"
+                className="h-full w-full object-cover transition duration-500 hover:scale-105"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* BESTSELLERS */}
       <section className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-10">
-        <div className="mb-14 max-w-xl">
+        <div className="mb-14 max-w-2xl">
           <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-cocoa">Bestsellers</span>
           <h2 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">
-            Loved by <em className="italic">connoisseurs</em>
+            Chosen for <em className="italic">special moments</em>
           </h2>
         </div>
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -70,7 +94,14 @@ function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="bg-[#0f0705] text-white px-6 py-24 lg:px-10">
+      <section className="text-white px-6 py-24 lg:px-10"
+        style={{
+          backgroundImage: `url(${testimonialBg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+        }}>
         <section className="mx-auto max-w-7xl">
           <div className="mb-14 text-center">
             <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-white">Praise</span>
@@ -92,7 +123,7 @@ function Home() {
                 <blockquote className="mt-6 font-display text-xl leading-relaxed text-foreground">
                   "{t.quote}"
                 </blockquote>
-                <figcaption className="mt-6 text-xs uppercase tracking-[0.18em] text-muted-foreground">
+                <figcaption className="mt-6 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                   {t.name} · {t.role}
                 </figcaption>
               </figure>
@@ -108,13 +139,13 @@ function Home() {
             <div>
               <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-cocoa">@cocosage</span>
               <h2 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">
-                From our <em className="italic">atelier</em>
+                Made to be <em className="italic">remembered</em>
               </h2>
             </div>
             <a href="#" className="text-sm uppercase tracking-[0.18em] text-cocoa">Follow on Instagram →</a>
           </div>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            {instagramGallery.map((src, i) => (
+            {instagramGallery.splice(0, 8).map((src, i) => (
               <a
                 key={i}
                 href="#"

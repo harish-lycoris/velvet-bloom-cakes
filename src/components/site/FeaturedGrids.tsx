@@ -2,41 +2,29 @@ import { Link } from "@tanstack/react-router";
 
 import catCelebration from "@/assets/cat-celebration.avif";
 import catEggless from "@/assets/cat-eggless.avif";
-import catPies from "@/assets/cat-pies.avif";
-import catPastries from "@/assets/cat-pastries.avif";
+import catPies from "@/assets/eggpuff.png";
+import catPastries from "@/assets/pastry.png";
 
 const gridItems = [
   {
     id: 1,
-    label: "CLICK TO",
-    action: "EXPLORE CELEBRATION",
-    type: "CAKES",
     image: catCelebration,
     link: "/shop?category=celebration",
   },
   {
     id: 2,
-    label: "CLICK TO",
-    action: "EXPLORE EGGLESS CELEBRATION",
-    type: "CAKES",
-    image: catEggless,
-    link: "/shop?category=eggless",
-  },
-  {
-    id: 3,
-    label: "CLICK TO",
-    action: "EXPLORE PIES",
-    type: "CAKES",
     image: catPies,
     link: "/shop?category=pies",
   },
   {
-    id: 4,
-    label: "CLICK TO",
-    action: "EXPLORE SINGLE PASTRIES",
-    type: "CAKES",
+    id: 3,
     image: catPastries,
     link: "/shop?category=pastries",
+  },
+  {
+    id: 4,
+    image: catEggless,
+    link: "/shop?category=eggless",
   },
 ];
 

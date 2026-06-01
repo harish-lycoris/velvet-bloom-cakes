@@ -2,31 +2,31 @@ import { useState, useEffect } from "react";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 
-import heroCake from "@/assets/banners/banner1-web.avif";
-import celebration from "@/assets/banners/banner2-web.avif";
-import dessertTub from "@/assets/banners/banner3-web.avif";
+import exoticTruffleChocolateCake from "@/assets/banners/banner1-web.png";
+import pineapplePuff from "@/assets/banners/banner2-web.png";
+import cinnamonRolls from "@/assets/banners/banner3-web.png";
 
 const banners = [
   {
     id: 1,
-    image: heroCake,
+    image: exoticTruffleChocolateCake,
     title: "Indulge Like a",
     highlight: "Master Chef",
-    subtitle: "Experience the ultimate chocolate indulgence crafted with passion and precision. One bite, and you’ll taste the art of perfection.",
+    subtitle: "Experience the ultimate exotic chocolate truffle, crafted with passion and precision. One bite, and you’ll taste the art of perfection.",
   },
   {
     id: 2,
-    image: celebration,
-    title: "Indulge in Joy with Our",
-    highlight: "Celebration Cakes",
-    subtitle: "Perfect for birthdays, anniversaries, or any special moment.",
+    image: pineapplePuff,
+    title: "Bite Into Golden,",
+    highlight: "Flaky Perfection",
+    subtitle: "Savor the tropical sweetness of our signature Pineapple Puffs. Light, airy, and bursting with fresh flavor.",
   },
   {
     id: 3,
-    image: dessertTub,
-    title: "Layers of Luxury. Moments of Bliss.",
-    highlight: "Double Treat Dessert Tubs",
-    subtitle: "Decadent cream, rich ganache & delightful layers in every bite.",
+    image: cinnamonRolls,
+    title: "Warm, Sweet &",
+    highlight: "Perfectly Spiced",
+    subtitle: "Unwind with our freshly baked Cinnamon Rolls. Soft, gooey layers glazed to absolute luxury.",
   },
 ];
 

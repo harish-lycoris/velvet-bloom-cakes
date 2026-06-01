@@ -7,17 +7,17 @@ import carrotCakeSmall from "@/assets/carrot-cake-small.jpg";
 import doubleChocolateBananaBread from "@/assets/double-chocolate-banana-bread.jpg";
 import strawberryBlueberryWhite from "@/assets/strawberry-blueberry-white.jpg";
 import blondie from "@/assets/choco-chip-blondie.jpg";
-/* import cinnamonRolls from "@/assets/classic-cinnamon-rolls.jpg";
+import cinnamonRolls from "@/assets/classic-cinnamon-rolls.jpg";
 import thickCookies from "@/assets/thick-choco-chip-cookies.jpg";
 import applePieRolls from "@/assets/apple-pie-cinnamon-rolls.jpg";
 import doubleChocolateCookie from "@/assets/double-chocolate-cookie.jpg";
 import cinnamonCookie from "@/assets/cinnamon-cookie.jpg";
 import chaiSpiceCookie from "@/assets/chai-spice-cookie.jpg";
-import classicRolls from "@/assets/classic-rolls.jpg";
+import classicRolls from "@/assets/nutella-chocolate-cinnamon-rolls.jpg";
 import twoChipCookie from "@/assets/two-chip-cookie.jpg";
 import nutellaRolls from "@/assets/nutella-cinnamon-rolls.jpg";
 import pineapplePuffs from "@/assets/pineapple-puffs.jpg";
-import bananaNutellaPuffs from "@/assets/banana-nutella-puffs.jpg"; */
+import bananaNutellaPuffs from "@/assets/banana-nutella-puffs.jpg";
 
 export type Cake = {
   id: string;
@@ -125,7 +125,7 @@ export const cakes: Cake[] = [
     image: blondie,
     category: "Brownies",
   },
-  /* {
+  {
     id: "classic-cinnamon-rolls",
     name: "Classic Cinnamon Rolls (8 Pieces)",
     description: "Soft cinnamon rolls with cream cheese frosting.",
@@ -237,7 +237,7 @@ export const cakes: Cake[] = [
     image: bananaNutellaPuffs,
     category: "Pastries",
     tag: "New",
-  }, */
+  },
 ];
 
 export const categories = [
@@ -250,22 +250,22 @@ export const categories = [
 
 export const testimonials = [
   {
-    name: "Anaïs Laurent",
-    role: "Paris, FR",
+    name: "Sravani Reddy",
+    role: "Vijayawada, AP",
     quote:
-      "The truffle cake arrived like a piece of jewellery. Every detail — from the box to the gold leaf — felt considered.",
+      "The cake looked stunning and tasted even better. The fresh ingredients and elegant design made our celebration truly memorable.",
   },
   {
-    name: "Marcus Bell",
-    role: "London, UK",
+    name: "Karthik Varma",
+    role: "Visakhapatnam, AP",
     quote:
-      "I've ordered from the world's best patisseries. Coco Sage sits comfortably among them. Honest, exquisite craft.",
+      "From ordering to delivery, everything was seamless. The rich chocolate cake was a hit with everyone at the party.",
   },
   {
-    name: "Priya Shah",
-    role: "Mumbai, IN",
+    name: "Anusha Rao",
+    role: "Tirupati, AP",
     quote:
-      "Our wedding cake was breathtaking. Guests stopped mid-conversation when it was wheeled in. Worth every penny.",
+      "We ordered a custom cake for our engagement and it exceeded every expectation. Beautiful craftsmanship and incredible flavor.",
   },
 ];
 

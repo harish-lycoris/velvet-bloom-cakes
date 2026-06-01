@@ -155,7 +155,7 @@ export function ProductGrids() {
                 <div className="absolute top-2 left-2 flex flex-col gap-1.5">
                   {/* Discount Badge */}
                   {product.discount && (
-                    <span className={`flex h-9 w-9 items-center justify-center rounded-full text-[11px] font-bold text-white shadow-sm ${product.discount.includes("5%") ? "bg-[#d9b44a]" : "bg-red-600"
+                    <span className={`flex h-9 w-9 items-center justify-center rounded-full text-[14px] font-bold text-white shadow-sm ${product.discount.includes("5%") ? "bg-[#d9b44a]" : "bg-red-600"
                       }`}>
                       {product.discount}
                     </span>
@@ -163,7 +163,7 @@ export function ProductGrids() {
 
                   {/* Sold Out Badge */}
                   {product.soldOut && (
-                    <span className="flex h-9 w-9 flex-col items-center justify-center rounded-full bg-red-700 p-0.5 text-[8px] font-black uppercase leading-tight text-white shadow-sm">
+                    <span className="flex h-9 w-9 flex-col items-center justify-center rounded-full bg-red-700 p-0.5 text-[10px] font-black uppercase leading-tight text-white shadow-sm">
                       <span>Sold</span>
                       <span>Out</span>
                     </span>
@@ -174,16 +174,16 @@ export function ProductGrids() {
               {/* Product Card Info Data metadata */}
               <div className="mt-4 flex flex-grow flex-col justify-between">
                 <div>
-                  <h3 className="text-xs font-bold tracking-wide text-neutral-800 line-clamp-2 uppercase min-h-[2rem]">
+                  <h3 className="text-sm font-bold tracking-wide text-neutral-800 line-clamp-2 uppercase min-h-[2rem]">
                     {product.name}
                   </h3>
-                  <p className="mt-1 text-[10px] italic leading-relaxed text-neutral-400 line-clamp-2 px-1">
+                  <p className="mt-1 text-[16px] italic leading-relaxed text-neutral-400 line-clamp-2 px-1">
                     {product.categories}
                   </p>
                 </div>
 
                 <div className="mt-3 border-t border-neutral-100 pt-2">
-                  <p className="text-xs font-bold text-[#c4984f]">
+                  <p className="text-sm font-bold text-[#c4984f]">
                     {product.priceRange}
                   </p>
                 </div>
