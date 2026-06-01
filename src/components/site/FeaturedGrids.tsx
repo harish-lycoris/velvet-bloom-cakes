@@ -1,9 +1,9 @@
 import { Link } from "@tanstack/react-router";
 
-import catCelebration from "@/assets/FeaturedGrids/cat-celebration.avif";
-import catEggless from "@/assets/FeaturedGrids/cat-eggless.avif";
-import catPies from "@/assets/FeaturedGrids/cat-pies.avif";
-import catPastries from "@/assets/FeaturedGrids/cat-pastries.avif";
+import catCelebration from "@/assets/featuredgrids/cat-celebration.avif";
+import catEggless from "@/assets/featuredgrids/cat-eggless.avif";
+import catPies from "@/assets/featuredgrids/cat-pies.avif";
+import catPastries from "@/assets/featuredgrids/cat-pastries.avif";
 
 const gridItems = [
   {
