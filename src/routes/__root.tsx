@@ -80,6 +80,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@CocoSage" },
+      { name: "twitter:title", content: "Coco Sage App" },
+      { name: "twitter:description", content: "Coco Sage Project" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/adce23c9-96d7-4dc0-bc35-004e062183dd/id-preview-f1e09db1--c4a48f0d-d179-4072-856a-f74c66efadd8.lovable.app-1780304204365.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/adce23c9-96d7-4dc0-bc35-004e062183dd/id-preview-f1e09db1--c4a48f0d-d179-4072-856a-f74c66efadd8.lovable.app-1780304204365.png" },
     ],
     links: [
       {
