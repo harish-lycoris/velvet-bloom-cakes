@@ -16,7 +16,8 @@ export const Route = createFileRoute("/shop/")({
   component: Shop,
 });
 
-const filters = ["All", "Chocolate", "Classic", "Cheesecake", "Fruit", "Signature"];
+// const filters = ["All", "Chocolate", "Classic", "Cheesecake", "Fruit", "Signature"];
+const filters = ["All", "Cakes", "Brownies"];
 
 function Shop() {
   const [active, setActive] = useState("All");
@@ -50,11 +51,10 @@ function Shop() {
               <button
                 key={f}
                 onClick={() => setActive(f)}
-                className={`rounded-full px-4 py-2 text-xs uppercase tracking-[0.18em] transition ${
-                  active === f
+                className={`rounded-full px-4 py-2 text-xs uppercase tracking-[0.18em] transition ${active === f
                     ? "bg-cocoa text-primary-foreground"
                     : "border border-border bg-background text-foreground/70 hover:border-cocoa"
-                }`}
+                  }`}
               >
                 {f}
               </button>
