@@ -12,7 +12,7 @@ export function ProductCard({ cake }: { cake: Cake }) {
       <Link
         to="/shop/$id"
         params={{ id: cake.id }}
-        className="block overflow-hidden rounded-3xl bg-secondary/40"
+        className="block overflow-hidden rounded-sm bg-secondary/40"
       >
         <div className="relative aspect-square overflow-hidden">
           <img

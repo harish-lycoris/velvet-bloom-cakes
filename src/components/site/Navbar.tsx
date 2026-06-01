@@ -29,16 +29,13 @@ export function Navbar() {
 
   return (
     <header
-      className={`sticky inset-x-0 top-0 z-50 transition-all duration-500 ${solid
-        ? "bg-background/85 backdrop-blur-md border-b border-border/60"
-        : "bg-transparent/85"
-        }`}
+      className={`sticky bg-[#0f0705] inset-x-0 top-0 z-50 transition-all duration-500 `}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-10">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-10 bg-[#0f0705]">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Coco Sage Logo" className="h-12 w-12 md:h-16 md:w-16 object-contain"/>
-          <span className={`font-display text-2xl tracking-wide ${solid ? "text-foreground" : "text-foreground"}`}>
-            Coco <span className="italic text-cocoa">Sage</span>
+          <img src={logo} alt="Coco Sage Logo" className="h-16 w-16 md:h-20 md:w-20 object-contain"/>
+          <span className={`font-display text-2xl tracking-wide ${solid ? "text-background" : "text-background"}`}>
+            Coco <span className="italic">Sage</span>
           </span>
         </Link>
 
@@ -47,8 +44,8 @@ export function Navbar() {
             <Link
               key={l.to}
               to={l.to}
-              className="group relative text-sm uppercase tracking-[0.18em] text-foreground/80 transition hover:text-foreground font-bold"
-              activeProps={{ className: "text-foreground" }}
+              className="group relative text-sm uppercase tracking-[0.18em] text-background/80 transition hover:text-background font-bold"
+              activeProps={{ className: "text-background" }}
             >
               {l.label}
               <span className="absolute -bottom-1 left-0 h-px w-0 bg-cocoa transition-all duration-300 group-hover:w-full" />
@@ -59,12 +56,12 @@ export function Navbar() {
         <div className="flex items-center gap-3">
           <Link
             to="/cart"
-            className="relative inline-flex h-11 w-11 items-center justify-center rounded-full border border-border/70 bg-background/70 backdrop-blur transition hover:border-cocoa hover:text-cocoa"
+            className="relative inline-flex h-11 w-11 items-center justify-center rounded-full border border-border/70 bg-background/70 backdrop-blur transition hover:border-cream hover:text-cocoa"
             aria-label="Cart"
           >
             <ShoppingBag className="h-4 w-4" />
             {count > 0 && (
-              <span className="absolute -right-1 -top-1 flex h-5 min-w-[20px] items-center justify-center rounded-full bg-cocoa px-1 text-[10px] font-medium text-primary-foreground">
+              <span className="absolute -right-1 -top-1 flex h-5 min-w-[20px] items-center justify-center rounded-full bg-cream px-1 text-[10px] font-medium text-primary-cocoa">
                 {count}
               </span>
             )}
@@ -87,7 +84,7 @@ export function Navbar() {
                 key={l.to}
                 to={l.to}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-3 text-sm uppercase tracking-[0.18em] text-foreground/80 hover:bg-secondary"
+                className="rounded-lg px-3 py-3 text-sm uppercase tracking-[0.18em] text-background/80 hover:bg-secondary"
               >
                 {l.label}
               </Link>
