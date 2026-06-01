@@ -23,7 +23,7 @@ export const cakes: Cake[] = [
     description: "Belgian dark chocolate, silken ganache, gold leaf finish.",
     longDescription:
       "An indulgent ode to cacao. Three layers of moist chocolate sponge are blanketed in a glossy 70% Belgian ganache, finished with delicate flakes of edible gold. A celebration in every slice.",
-    price: 48,
+    price: 1148,
     image: truffle,
     category: "Chocolate",
     tag: "Signature",
@@ -34,7 +34,7 @@ export const cakes: Cake[] = [
     description: "Buttermilk crumb layered with cream cheese frosting.",
     longDescription:
       "A timeless classic refined. Crimson buttermilk sponge stacked with whipped Philadelphia cream cheese frosting — soft, tangy, unforgettable.",
-    price: 42,
+    price: 1142,
     image: redVelvet,
     category: "Classic",
     tag: "Bestseller",
@@ -45,7 +45,7 @@ export const cakes: Cake[] = [
     description: "Caramelised biscoff mousse with golden cookie crunch.",
     longDescription:
       "Layers of toasted biscoff crumb, silken caramel mousse and whipped vanilla cream — crowned with hand-broken Lotus cookies.",
-    price: 52,
+    price: 1152,
     image: biscoff,
     category: "Signature",
     tag: "New",
@@ -56,7 +56,7 @@ export const cakes: Cake[] = [
     description: "Slow-baked New York style with wild blueberry compote.",
     longDescription:
       "A buttery graham base supports our silky baked cheesecake, finished with a slow-cooked wild blueberry compote and fresh mint.",
-    price: 46,
+    price: 1146,
     image: blueberry,
     category: "Cheesecake",
   },
@@ -66,7 +66,7 @@ export const cakes: Cake[] = [
     description: "Cherry-kissed chocolate sponge, vanilla chantilly.",
     longDescription:
       "An old-world favourite. Dark chocolate sponge soaked in cherry syrup, layered with whipped chantilly and morello cherries.",
-    price: 50,
+    price: 1150,
     image: blackforest,
     category: "Classic",
     tag: "Bestseller",
@@ -77,7 +77,7 @@ export const cakes: Cake[] = [
     description: "Alphonso mango mousse on a vanilla génoise.",
     longDescription:
       "Sun-ripened Alphonso mango whipped into a delicate mousse, set over light vanilla génoise and finished with fresh mango petals.",
-    price: 54,
+    price: 1154,
     image: mango,
     category: "Fruit",
     tag: "New",

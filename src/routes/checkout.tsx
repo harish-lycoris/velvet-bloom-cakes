@@ -83,7 +83,7 @@ function Checkout() {
                     <p className="text-sm font-medium">{it.cake.name}</p>
                     <p className="text-xs text-muted-foreground">× {it.qty}</p>
                   </div>
-                  <span className="text-sm">${it.cake.price * it.qty}</span>
+                  <span className="text-sm">₹{it.cake.price * it.qty}</span>
                 </li>
               ))}
               {detailed.length === 0 && (

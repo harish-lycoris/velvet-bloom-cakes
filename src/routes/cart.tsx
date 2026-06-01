@@ -47,7 +47,7 @@ function CartPage() {
                         </Link>
                         <p className="mt-1 text-sm text-muted-foreground">{it.cake.category}</p>
                       </div>
-                      <span className="font-display text-xl">${it.cake.price * it.qty}</span>
+                      <span className="font-display text-xl">₹{it.cake.price * it.qty}</span>
                     </div>
                     <div className="mt-auto flex items-center justify-between pt-4">
                       <div className="flex items-center rounded-full border border-border">
